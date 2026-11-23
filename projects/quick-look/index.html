@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><!-- viewport-fit=cover: lets iOS report the home-indicator / notch insets to env(safe-area-inset-*)
+         (they are 0 otherwise); dock.css, base.css and expanding-cards.css keep content clear of them. --><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><script>
+      // Reloading with a card open: keep the page hidden (except the open card) until
+      // expanding-cards.js has restored the scroll position, so it doesn't jump.
+      (function () {
+        try {
+          var state = window.history && window.history.state;
+          if (state && state.cardExpanded) document.documentElement.classList.add('refreshing-expanded-card');
+        } catch (e) {}
+      })();
+    </script><title>Quick-Look - Bre Meyer</title><meta name="description" content="I led the development of QuickLook, a lightweight preview experience for saved inspiration."><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><link rel="canonical" href="https://bremeyer.dev/projects/quick-look"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Quick-Look - Bre Meyer"><meta property="og:description" content="I led the development of QuickLook, a lightweight preview experience for saved inspiration."><meta property="og:url" content="https://bremeyer.dev/projects/quick-look"><meta property="og:site_name" content="Bre Meyer"><meta property="og:image" content="https://bremeyer.dev/og-image.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Bre Meyer, Software Engineer"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bremeyer.dev/og-image.png"><meta name="twitter:image:alt" content="Bre Meyer, Software Engineer"><link rel="icon" href="/_astro/favicon-obsidian-trace.ChGJCXi0_2gOSKg.png" sizes="32x32"><link rel="icon" href="/_astro/favicon-obsidian-trace.ChGJCXi0_2skwxJ.png" sizes="192x192"><link rel="apple-touch-icon" href="/_astro/favicon-obsidian-trace.ChGJCXi0_ZIEBp8.png"><link rel="stylesheet" href="/_astro/Home.BZY39cuM.css"></head><body class="taffy-body"><div id="page" class="site"><main id="primary" class="site-main"><section><div id="about" class="dock-anchor"></div><section id="home" class="hero"><div class="hero-inner"><div class="hero-text"><h1 class="hero-name">Bre Meyer</h1><div class="about-intro"><p>I’m an iOS engineer based in the SF Bay Area. I’ve been building iOS apps for more than seven years, and I’m also a bit of a designer at heart. Good design is often more precise, and good engineering more creative, than either looks. When the two come together, form improves function and function improves form, and I genuinely love when I get to work at the intersection of both.</p><p>If you’re here from my résumé or LinkedIn, I’m glad you stopped by! A résumé is good at facts but loses the story behind them, so I made this site as a place to tell it. Every card on the timeline and in my projects opens up to the narrative behind it and gives context to what I took away from each experience.</p><p>When I’m not at the keyboard, I enjoy cuddling my cat and surfing the streets on my Onewheel. I’m always happy to connect on LinkedIn.</p></div><div class="about-socials"><a class="social-link" href="https://github.com/Bre-Meyer" target="_blank" rel="noopener" title="GitHub"><svg class="social-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg><span class="social-label">GitHub</span></a><span class="dot">•</span><a class="social-link" href="https://www.linkedin.com/in/bre-meyer-ios/" target="_blank" rel="noopener" title="LinkedIn"><svg class="social-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg><span class="social-label">LinkedIn</span></a><span class="dot">•</span><a class="social-link" href="mailto:hello@bremeyer.dev" target="_blank" rel="noopener" title="Email"><svg class="social-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"></path></svg><span class="social-label">Email</span></a></div></div><div class="hero-photo"><img decoding="async" src="/_astro/portrait.BxM1FwWP_Z1Y8ADj.webp" srcset="/_astro/portrait.BxM1FwWP_sXYWs.webp 220w, /_astro/portrait.BxM1FwWP_1M1gyx.webp 440w, /_astro/portrait.BxM1FwWP_Z1Y8ADj.webp 660w" sizes="220px" alt="Portrait of Bre Meyer"></div></div></section></section><div class="dock-shell"><nav class="floating-dock" aria-label="Section navigation"><div class="dock-indicator" aria-hidden="true"></div><a class="dock-link" href="#about">About</a><a class="dock-link" href="#career">Career</a><a class="dock-link" href="#projects">Projects</a></nav></div><section><div id="career" class="dock-anchor"></div><section class="work-timeline" id="career"><div class="section-header"><h2>Career Timeline</h2><p class="section-subtitle">My career journey so far. I started with early gigs in web development and IT before finding my niche in iOS development. Each role has been a stepping stone, teaching me new skills and shaping my approach to engineering.</p></div><div class="work-timeline-grid" id="work-timeline-root"><div class="work-timeline-shell"><div class="work-rail-shell"><div class="work-timeline-rail"></div></div><div class="work-timeline-root"><section class="work-group align-left"><div class="work-group-header"><h3 class="work-group-title">Lyft</h3></div><div class="work-group-items"><div class="work-item align-left"><article class="work-card expanding-card" data-slug="lyft-ios-design-systems" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-lyft-ios-design-systems">Software Engineer, iOS Design Systems</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">Lyft</span><span class="work-card-sep"> │ </span><span class="work-card-dates">Mar 2026 - Aug 2026</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Built accessible, reusable components and shared iOS infrastructure that helped product teams ship consistent experiences.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  At Lyft, I worked on the shared iOS component libraries that support product experiences across multiple apps, hundreds of modules, and dozens of teams. My job sat at the intersection of engineering, design, and accessibility: building foundations that feel straightforward at the call site while handling the complexity needed to work consistently at scale.
+</p>
+<p>
+  A major part of my focus was Lyft’s SwiftUI migration. I designed SwiftUI component APIs that bridge existing UIKit implementations, giving feature teams a practical migration path without requiring disruptive call-site rewrites. That work involved thinking carefully about public API design, backward compatibility, design tokens, and how today’s bridge can leave room for a native SwiftUI implementation later.
+</p>
+<p>
+  I also led accessibility improvements for shared components, with a particular focus on VoiceOver and Voice Control. Because a fix in the design system can improve every screen that consumes an affected component, I worked across teams to take issues from triage through implementation and merge, then validated that the result behaved well with assistive technologies.
+</p>
+<p>
+  The infrastructure side was just as important as the component code. I worked with snapshot testing, Bazel, and cross-team tooling to make changes safer and easier to adopt. The part I enjoyed most was turning a need that appeared in one product surface into a resilient, well-documented foundation that could make the whole app ecosystem more consistent and accessible.
+</p>
+</div></div></div></article><div class="work-node"></div><div class="work-item-date">Mar 2026 - Aug 2026</div></div></div></section><section class="work-group align-right"><div class="work-group-header"><h3 class="work-group-title">The Knot Worldwide</h3></div><div class="work-group-items"><div class="work-item align-right"><div class="work-item-date">Apr 2024 - Oct 2025</div><div class="work-node"></div><article class="work-card expanding-card" data-slug="the-knot-worldwide-senior-ios-engineer" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-the-knot-worldwide-senior-ios-engineer">Senior iOS Engineer</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">The Knot Worldwide</span><span class="work-card-sep"> │ </span><span class="work-card-dates">Apr 2024 - Oct 2025</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Stepped up as a senior, taking on project management and guiding architectural decisions for the iOS team.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  When I moved into the Senior role, the nature of my work shifted. I continued writing SwiftUI, but I was doing a lot more architectural thinking: how features should be structured, how data should flow, how to organize work across the team so that we weren’t constantly reinventing the wheel.
+</p>
+<p>
+  I was highly involved in planning and scoping projects, working with product, design, engineering leads, backend, QA, and occasionally leadership when timelines or priorities were ambiguous. A non-trivial amount of my day became coordination: clarifying requirements, unblocking teammates, reviewing work, and making sure what we shipped was consistent with both user expectations and the larger technical direction of the app.
+</p>
+<p>
+  A lot of this foundation came from work I did on the Style Quiz and Wedding Vision features. These projects stretched across multiple teams and disciplines, and were long-running efforts that evolved over time. I cared about them not just because they were flashy and user-facing, but because they were technically ambitious and forced us to solve real architectural problems.
+</p>
+<p>
+  I spent a significant amount of time translating messy product requirements into something the engineering team could reasonably execute. That meant helping define the technical strategy for each phase, breaking work into milestones, documenting assumptions, and staying closely aligned with backend so the data that powered the feature actually reflected what the UI needed.
+</p>
+<p>
+  I also continued to help level up the team. By this time, SwiftUI adoption was no longer an experiment. Every new feature in the app was being built with it, and people were confident doing so independently. I was often reviewing code, helping people troubleshoot edge cases, and exploring ways to improve performance, testability, and consistency in our approach.
+</p>
+<p>
+  I didn’t have a formal management role, but a lot of my work involved people, not just code: mentoring, teaching, unblocking, facilitating tough conversations when priorities changed, and advocating for better engineering practices when scope or timelines threatened to undermine technical quality.
+</p>
+<p>
+  Looking back, the coolest part isn’t just that we shipped ambitious features. It’s that the team culture shifted to one where engineering collaboration, architectural thinking, and shared ownership became normal. The stuff I helped set up lived beyond the work I personally did.
+</p>
+</div></div></div></article></div><div class="work-item align-right"><div class="work-item-date">Nov 2021 - Apr 2024</div><div class="work-node"></div><article class="work-card expanding-card" data-slug="the-knot-worldwide-ios-engineer" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-the-knot-worldwide-ios-engineer">iOS Engineer</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">The Knot Worldwide</span><span class="work-card-sep"> │ </span><span class="work-card-dates">Nov 2021 - Apr 2024</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Spearheaded adoption of SwiftUI at The Knot by hosting lunch-and-learns and leading projects that set a consistent foundation for future features.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  I joined The Knot Worldwide as part of a small iOS team that was beginning to explore SwiftUI but hadn’t fully committed to it yet. A lot of the app’s core UI was still UIKit, and most people were familiar and comfortable with that stack. I naturally leaned into SwiftUI early, mostly because I was excited about declarative patterns and the potential for the team to move faster without wrestling with the old view layer.
+</p>
+<p>
+  Most of my time at this stage revolved around building new features in SwiftUI while designing them in a way that made it easier for others to adopt. I spent a lot of energy on reusable components, consistent patterns, and technical documentation that helped demystify what SwiftUI was actually doing under the hood. I jokingly became the “SwiftUI hype person” of the team, not just advocating for the framework but making sure it actually worked in our codebase and wasn’t just a shiny toy.
+</p>
+<p>
+  One of the first major features I worked on was related to helping couples visualize and articulate the style of their wedding. The technical challenge was blending a visually rich UI with a flow that felt bite-sized and approachable, while also capturing structured data the backend could work with. It started as a standalone feature, but it ended up becoming foundational for other parts of the app.
+</p>
+<p>
+  Along the way, I realized most people on the team wanted to learn SwiftUI, but they needed a low-pressure way to do it. So I started hosting casual “code along” sessions, sharing internal examples, and pairing with teammates to help them build their first screens in SwiftUI. None of this was mandated, just something that made work more enjoyable for all of us and helped move the team forward.
+</p>
+<p>
+  By the time I was promoted, I wasn’t just writing SwiftUI. I was building the patterns that helped everyone else write it too.
+</p>
+</div></div></div></article></div></div></section><section class="work-group align-left"><div class="work-group-header"><h3 class="work-group-title">OCV, LLC</h3></div><div class="work-group-items"><div class="work-item align-left"><article class="work-card expanding-card" data-slug="ocv-llc-ios-developer" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-ocv-llc-ios-developer">iOS Developer</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">OCV, LLC</span><span class="work-card-sep"> │ </span><span class="work-card-dates">Mar 2019 - Jul 2021</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Pivoted into mobile development, taking ownership of major features and mentoring a junior dev.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  At OCV, I really dove headfirst into iOS development. We were a small team building white-label apps for municipal organizations, including fire departments, police departments, and a few schools. Because we were supporting over 350 apps from a single codebase, I got used to juggling a lot of responsibilities really quickly.
+</p>
+<p>
+  One of the coolest projects I handled was building a COVID wellness check feature right in the thick of the pandemic. It was probably one of my first big end-to-end features where I owned the whole thing, from designing the flow to implementing the UI and logic. The idea was to let each client customize their own questionnaire and generate a daily badge if the user passed the check. It was a mix of quick iteration and making sure the feature could be tailored to different needs, and it definitely leveled up my problem-solving skills.
+</p>
+<p>
+  Another project that stands out was the Narcan administration feature. That one taught me a ton about creating a flexible, step-by-step flow that could adapt to different user inputs, like guiding someone through CPR steps and looping back if needed. It was a real crash course in building user-friendly, life-saving flows.
+</p>
+<p>
+  On top of the technical work, I also got to mentor a junior engineer for the first time. At first, I tried letting her learn on her own with tutorials, but I realized pretty quickly that being hands-on was way more effective. I ended up having her sit next to me and walk through the code together, explaining my decisions out loud and then letting her take over bits of the code. That approach not only helped her get comfortable but also taught me a lot about how to be a better mentor.
+</p>
+<p>
+  In the end, OCV was where I learned to juggle a ton of roles at once, from iOS development to making small product decisions and mentoring a teammate. It was a huge growth period for me, and I left with a whole new level of confidence in both my technical and leadership skills.
+</p>
+</div></div></div></article><div class="work-node"></div><div class="work-item-date">Mar 2019 - Jul 2021</div></div></div></section><section class="work-group align-right"><div class="work-group-header"><h3 class="work-group-title">Freelance</h3></div><div class="work-group-items"><div class="work-item align-right"><div class="work-item-date">May 2017 - Jun 2019</div><div class="work-node"></div><article class="work-card expanding-card" data-slug="freelance-web-designer" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-freelance-web-designer">Web Designer</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">Freelance</span><span class="work-card-sep"> │ </span><span class="work-card-dates">May 2017 - Jun 2019</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Built up my technical chops designing affordable websites and logos for local businesses.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  Before I even jumped fully into iOS development, I got my start doing a bit of freelance web design under my own little brand, BreMeyer.tech. It was basically me, a CorelDRAW install, and a lot of gumption helping a handful of local businesses get online. I designed their logos, set up their hosting, and built out simple WordPress sites to give them a web presence.
+</p>
+<p>
+  Honestly, it was mostly about getting my hands dirty and learning how to deal with real clients, even if it was just a few of them. They didn’t need anything fancy, and I wasn’t charging much. It was more about offering them a budget-friendly way to get online while I got to practice real-world skills. Plus, it gave me something to point to when I eventually applied for my first “official” development job at OCV.
+</p>
+<p>
+  It might have been a small start, but it was a great intro to what it means to build something that actually goes live and helps people, and it definitely planted the seed for everything I’ve done since.
+</p>
+</div></div></div></article></div></div></section><section class="work-group align-left"><div class="work-group-header"><h3 class="work-group-title">West Main Studios</h3></div><div class="work-group-items"><div class="work-item align-left"><article class="work-card expanding-card" data-slug="west-main-media-consultant" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-west-main-media-consultant">Media and Technologies Consultant</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">West Main Studios</span><span class="work-card-sep"> │ </span><span class="work-card-dates">Dec 2016 - Jul 2019</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Revamped a dance studio’s tech and design from their website to their AV booth.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  At West Main Studios, I wore a lot of hats that blended tech and creativity. The studio needed someone who could handle a range of technical and design tasks, and I was more than happy to dive in. I revamped their website from the ground up, transforming it from something pretty clunky into a clean, professional, and user-friendly site. Along the way, I also redesigned their logo into a scalable vector format, so it looked great on everything from their signage to their recital t-shirts.
+</p>
+<p>
+  In addition to the website and logo work, I did a lot of behind-the-scenes tech and media tasks. I edited audio tracks and their metadata for their recitals, created image projections, and even designed those recital t-shirts. During the actual recitals, I was up in the AV booth helping run the show and making sure everything went smoothly.
+</p>
+<p>
+  Basically, I was the go-to person for anything tech or media related, and it was a fantastic experience in juggling a bunch of creative and technical roles at once. It also helped me build connections that led to more freelance work down the road, which was a nice bonus.
+</p>
+</div></div></div></article><div class="work-node"></div><div class="work-item-date">Dec 2016 - Jul 2019</div></div></div></section><section class="work-group align-right"><div class="work-group-header"><h3 class="work-group-title">Limestone County Central Office</h3></div><div class="work-group-items"><div class="work-item align-right"><div class="work-item-date">Jun 2016 - Jul 2016</div><div class="work-node"></div><article class="work-card expanding-card" data-slug="limestone-county-technology-intern" data-details-loaded="1"><div class="expanding-card-content"><div class="work-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="work-card-role-alignment"><h3 class="work-card-role" id="card-title-limestone-county-technology-intern">Technology Intern</h3></span></div><div class="work-card-subheader"><span class="work-card-subheader-text-alignment"><span class="work-card-subheader-text"><span class="work-card-company">Limestone County Central Office</span><span class="work-card-sep"> │ </span><span class="work-card-dates">Jun 2016 - Jul 2016</span></span></span></div><div class="work-card-body"><div class="work-card-teaser"><p class="work-card-summary">Got my start in tech by keeping the county’s website running and providing IT support to the superintendent.</p><button type="button" class="work-card-more">More</button></div><div class="expanding-card-details"><p>
+  My very first foray into the tech world was as a Technology Intern at the Limestone County Central Office. It was a short gig, just a couple of months, but it was my first experience actually getting paid to do tech stuff. I got to maintain the school county’s website, provide IT support to the superintendent, and even help put together a slick PowerPoint presentation for him.
+</p>
+<p>
+  It might have been a small role, but it gave me my first taste of what it was like to work in a real tech environment. It was also where I learned that I really enjoyed making things more user-friendly and that I had a knack for smoothing out tech headaches for other people. It’s a small piece of the puzzle, but it’s definitely part of the journey that eventually led me into the world of mobile development.
+</p>
+</div></div></div></article></div></div></section></div></div></div></section></section><section><div id="projects" class="dock-anchor"></div><div class="section projects" id="projects-section"><div class="section-header"><h2>Project Showcase</h2><p class="section-subtitle">A few examples of work I&#39;ve done that I&#39;m proud of.</p></div><div class="projects-grid"><article class="project-card expanding-card is-expanded" data-slug="quick-look" data-details-loaded="1"><div class="expanding-card-content"><div class="project-card-header"><button type="button" class="expanding-card-close" aria-label="Close">&lsaquo;</button><span class="project-title-alignment"><h3 class="project-title" id="card-title-quick-look">Quick-Look</h3></span></div><div class="project-thumbnail-image-container"><img class="project-thumbnail-image" src="/_astro/quick-look-thumb.DLb5205T_Z2jYD7H.webp" srcset="/_astro/quick-look-thumb.DLb5205T_Z1kqE4b.webp 120w, /_astro/quick-look-thumb.DLb5205T_Z1Er39n.webp 160w, /_astro/quick-look-thumb.DLb5205T_1LMU3f.webp 200w, /_astro/quick-look-thumb.DLb5205T_Z9y0FE.webp 240w, /_astro/quick-look-thumb.DLb5205T_Z27vzna.webp 320w, /_astro/quick-look-thumb.DLb5205T_13pBz1.webp 400w, /_astro/quick-look-thumb.DLb5205T_ZeKJn8.webp 460w, /_astro/quick-look-thumb.DLb5205T_eUvpv.webp 520w, /_astro/quick-look-thumb.DLb5205T_Z1I23h0.webp 600w, /_astro/quick-look-thumb.DLb5205T_Z2jYD7H.webp 633w" sizes="(max-width: 820px) min(250px, calc((100vw - 90px) * 0.4167)), (max-width: 879px) 250px, 200px" alt="Quick-Look" loading="lazy"></div><div class="project-card-body"><p class="project-copy">I led the development of QuickLook, a lightweight preview experience for saved inspiration.</p><div class="expanding-card-details"><figure class="project-detail-hero project-detail-hero--device"><img src="/_astro/quick-look-thumb.DLb5205T_Z2jYD7H.webp" srcset="/_astro/quick-look-thumb.DLb5205T_2eEItg.webp 80w, /_astro/quick-look-thumb.DLb5205T_Z1kqE4b.webp 120w, /_astro/quick-look-thumb.DLb5205T_Z1Er39n.webp 160w, /_astro/quick-look-thumb.DLb5205T_1LMU3f.webp 200w, /_astro/quick-look-thumb.DLb5205T_Z9y0FE.webp 240w, /_astro/quick-look-thumb.DLb5205T_Z2uUU2c.webp 280w, /_astro/quick-look-thumb.DLb5205T_UIvzS.webp 300w, /_astro/quick-look-thumb.DLb5205T_Z27vzna.webp 320w, /_astro/quick-look-thumb.DLb5205T_Z2nOlCB.webp 360w, /_astro/quick-look-thumb.DLb5205T_13pBz1.webp 400w, /_astro/quick-look-thumb.DLb5205T_1MbisK.webp 480w, /_astro/quick-look-thumb.DLb5205T_Z26rnV2.webp 560w, /_astro/quick-look-thumb.DLb5205T_Z2jYD7H.webp 633w" sizes="(max-width: 820px) calc((100vw - 66px) * 0.2924), 141px" alt="Quick-Look on an iPhone: a saved inspiration photo with the vendors in it." loading="lazy" decoding="async"></figure><div class="project-detail">
+  <p>
+    QuickLook is a production feature I led end-to-end at The Knot Worldwide, from planning and technical coordination through development and launch. The feature shipped to millions of users and resulted in a 1.7% lift in couple bookings, making it one of the most impactful projects I’ve worked on.
+  </p>
+  <p>
+    As the engineering lead, a significant part of my role was project planning and task breakdown. In earlier projects, I typically planned work from a purely engineering perspective, mapping out components, architecture, and implementation details up front. While that approach ensured technical clarity, it often required a large upfront investment and didn’t always translate cleanly to product or QA workflows.
+  </p>
+  <p>
+    For QuickLook, I intentionally tried a different approach: splitting work into user stories instead of technical tasks. Each ticket was written from the user’s perspective with concrete, testable acceptance criteria (for example, “When a user taps the Quick Look button, the app navigates to a new page”). This made scope clearer for cross-functional partners and ensured that QA could validate behavior without needing deep implementation context. I also explicitly accounted for edge cases like loading, error, and empty states to avoid late surprises.
+  </p>
+  <p>
+    Once the user stories were defined, I reviewed them through a technical lens to identify work that required larger infrastructural changes, such as introducing a coordinator layer to handle navigation. Those efforts were split into developer-only blocking tickets, allowing the user-facing stories to remain focused while still unblocking the necessary groundwork.
+  </p>
+  <p>
+    What I learned from this project is that leading with user-centric planning significantly improved clarity and velocity, especially for QA and product alignment. That said, the lighter upfront technical planning did result in some mid-development discussions around implementation details. In hindsight, I’ve found the best balance is a hybrid approach: starting from user stories, but pairing them with just enough technical scaffolding to reduce ambiguity.
+  </p>
+  <p>
+    I’m proud to showcase QuickLook because it’s a real, shipped feature in a widely used app with measurable business impact. Just as importantly, it represents a hands-on learning experience in technical leadership, project planning, and adapting my process to better support both developers and cross-functional partners.
+  </p>
+  <div class="project-detail-access">
+    <h4 class="project-detail-access-title">How to access it:</h4>
+    <p>
+      After downloading the app (link below), create an account and log in.
+    </p>
+    <ul>
+      <li>After logging in, tap the heart icon on the home screen to go to your Favorites.</li>
+      <li>Favorite at least one item from the carousels if the page is empty.</li>
+      <li>Items that support QuickLook show a sparkly magnifying glass icon on their thumbnail. Tapping that icon opens the QuickLook view.</li>
+    </ul>
+  </div>
+  <div class="project-detail-actions">
+    <a
+      class="project-detail-cta"
+      href="https://apps.apple.com/us/app/the-knot-wedding-planner/id457941553"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View The Knot on the App Store
+    </a>
+  </div>
+</div>
+</div><a class="project-cta" href="/projects/quick-look">More</a></div></div></article><article class="project-card expanding-card" data-slug="style-quiz" data-details-loaded="1"><div class="expanding-card-content"><div class="project-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="project-title-alignment"><h3 class="project-title" id="card-title-style-quiz">Style Quiz</h3></span></div><div class="project-thumbnail-image-container"><img class="project-thumbnail-image" src="/_astro/style-quiz-thumb.Cs3UAAxS_2cCoyL.webp" srcset="/_astro/style-quiz-thumb.Cs3UAAxS_H3BnD.webp 120w, /_astro/style-quiz-thumb.Cs3UAAxS_Z77yfN.webp 160w, /_astro/style-quiz-thumb.Cs3UAAxS_ZrPUp.webp 200w, /_astro/style-quiz-thumb.Cs3UAAxS_Zj6Den.webp 240w, /_astro/style-quiz-thumb.Cs3UAAxS_Z11C6xq.webp 320w, /_astro/style-quiz-thumb.Cs3UAAxS_27uoG4.webp 400w, /_astro/style-quiz-thumb.Cs3UAAxS_Z1o6J1k.webp 460w, /_astro/style-quiz-thumb.Cs3UAAxS_ZFfphW.webp 520w, /_astro/style-quiz-thumb.Cs3UAAxS_Z1nKRB0.webp 600w, /_astro/style-quiz-thumb.Cs3UAAxS_2cCoyL.webp 633w" sizes="(max-width: 820px) min(250px, calc((100vw - 90px) * 0.4167)), (max-width: 879px) 250px, 200px" alt="Style Quiz" loading="lazy"></div><div class="project-card-body"><p class="project-copy">This was my long-running &quot;pet project&quot; at The Knot and the place where I experimented the most with SwiftUI layouts and animations.</p><div class="expanding-card-details"><figure class="project-detail-hero project-detail-hero--device"><img src="/_astro/style-quiz-thumb.Cs3UAAxS_2cCoyL.webp" srcset="/_astro/style-quiz-thumb.Cs3UAAxS_Z2PztF.webp 80w, /_astro/style-quiz-thumb.Cs3UAAxS_H3BnD.webp 120w, /_astro/style-quiz-thumb.Cs3UAAxS_Z77yfN.webp 160w, /_astro/style-quiz-thumb.Cs3UAAxS_ZrPUp.webp 200w, /_astro/style-quiz-thumb.Cs3UAAxS_Zj6Den.webp 240w, /_astro/style-quiz-thumb.Cs3UAAxS_ZTQEDd.webp 280w, /_astro/style-quiz-thumb.Cs3UAAxS_dNx0w.webp 300w, /_astro/style-quiz-thumb.Cs3UAAxS_Z11C6xq.webp 320w, /_astro/style-quiz-thumb.Cs3UAAxS_20OGlF.webp 360w, /_astro/style-quiz-thumb.Cs3UAAxS_27uoG4.webp 400w, /_astro/style-quiz-thumb.Cs3UAAxS_2qDKeE.webp 480w, /_astro/style-quiz-thumb.Cs3UAAxS_Z1h0qGM.webp 560w, /_astro/style-quiz-thumb.Cs3UAAxS_2cCoyL.webp 633w" sizes="(max-width: 820px) calc((100vw - 66px) * 0.2924), 141px" alt="The Style Quiz on an iPhone." loading="lazy" decoding="async"></figure><h3>
+  Building My First Production SwiftUI Feature at The Knot
+</h3>
+<p>
+  The Style Quiz was the first major feature where I really got to push SwiftUI into a UIKit-heavy codebase at The Knot. Honestly, it became the project where I learned, experimented, broke things, fixed things, and gradually shaped the patterns I’d use across the rest of my time on the team.
+</p>
+<p>
+  When I picked up the feature, it had already gone through a couple of reskins and reworks over the years. My version started as a fairly simple swipe-through questionnaire, but the more I worked on it, the more it evolved into a proving ground for SwiftUI patterns, architectural experiments, and reusable components that eventually made their way into other parts of the app.
+</p>
+⸻
+<h3>
+  Introducing SwiftUI into a UIKit World
+</h3>
+<p>
+  The Knot’s iOS app was almost entirely UIKit at the time, and SwiftUI was still new to the company. Integrating it wasn’t as simple as dropping in a few views. You had to think about how it talked to UIKit navigation, what controlled what, and how state flowed between the two worlds.
+</p>
+<p>
+  The first challenge was navigation. Because the Style Quiz lived inside an existing UIKit flow, I had to wrap SwiftUI screens inside hosting controllers that played nicely with UIKit while still letting me build the quiz UI declaratively. At the time, our patterns for this were still evolving, so I had to invent a few along the way. Some were messy in retrospect, but they all taught me valuable lessons about UIKit/SwiftUI boundaries.
+</p>
+<p>
+  Handling dynamic actions coming back from SwiftUI was another hurdle. When a user made a choice on a SwiftUI screen, UIKit needed to know which next screen to show, how to structure the flow, and how to pass data along cleanly. Early on, that part of the architecture got tangled pretty fast, but each reskin gave me a chance to clean it up, abstract it, or replace the janky parts with something more maintainable.
+</p>
+⸻
+<h3>
+  The Architecture: A Study in Iteration
+</h3>
+<p>
+  If you looked at the Style Quiz architecture over time, you’d be able to see my growth as an engineer in real time.
+</p>
+<p>
+  My early implementation leaned heavily on UIKit coordinators pushing hosting controllers with closures and enums describing “next steps.” It wasn’t pretty, but it worked. Later, as I rewrote and reskinned the feature multiple times, I gradually refactored it toward a more MVVM-inspired pattern: view models driving SwiftUI views, coordinators handling flow, and cleaner boundaries between presentation and logic.
+</p>
+<p>
+  Each iteration was an opportunity to revisit past decisions, fix the brittle parts, and try new patterns. I didn’t get everything right. I had experiments that aged poorly within a few months, but that willingness to iterate ended up shaping the foundation for the architecture patterns I later helped introduce at a team-wide level.
+</p>
+⸻
+<h3>
+  Reusable Components That Lived Beyond the Quiz
+</h3>
+<p>
+  One of the most satisfying parts of this project was building components that ended up being used all over the app.
+</p>
+<h4>
+  Masonry Grid Layout
+</h4>
+<p>
+  One reskin introduced a layout that needed a Pinterest-style two-column masonry grid. I ended up building a custom SwiftUI layout that handled variable heights, dynamic content, and smooth scrolling. That component later became a key part of the revamped onboarding experience and other style-based flows, and the team has continued using masonry patterns inspired by it.
+</p>
+<h4>
+  Progress Bar Style
+</h4>
+<p>
+  The Style Quiz needed a custom progress bar that matched the visual brand. I turned it into a reusable progress style, and from there it started popping up everywhere: onboarding, RSVP flows, multi-step forms, and basically anything with a numbered sequence.
+</p>
+<h4>
+  Hosting Controller Patterns
+</h4>
+<p>
+  Before we had official conventions, I built a custom “union-compatible” hosting controller that handled some of the quirks between UIKit navigation and SwiftUI screens. It wasn’t glamorous, but it became a go-to wrapper for a while until a new team formalized the approach.
+</p>
+<p>
+  Even components I didn’t build for the quiz originally, like my CachedWebImage view, wound up being used in it because it became the team’s standard for displaying web images in SwiftUI.
+</p>
+⸻
+<h3>
+  Team Impact and SwiftUI Adoption
+</h3>
+<p>
+  Style Quiz was also the first feature where I started showing the team that SwiftUI could work in production. I was still early in my SwiftUI journey, but I shared everything I learned: what worked, what didn’t, how state flowed, where UIKit still needed to step in, and how we could make SwiftUI screens play nicely within existing flows.
+</p>
+<p>
+  I hosted code-alongs, built examples, and answered questions practically every day. People were excited, and my manager encouraged me to keep pushing those learnings team-wide. Over time, Style Quiz became one of the internal “reference points” for how real features could be built using SwiftUI.
+</p>
+⸻
+<h3>
+  What This Project Taught Me
+</h3>
+<p>
+  Looking back, Style Quiz was where I learned how to ship SwiftUI at scale, not just build cute prototypes.
+</p>
+<p>
+  It taught me how to:
+  <ul>
+  <li>evaluate architectures and refactor them over time </li>
+  <li>gracefully bridge SwiftUI and UIKit</li>
+  <li>create reusable components that scale across multiple features</li>
+  <li>debug “invisible” state bugs and navigation oddities</li>
+  <li>embrace iteration instead of trying to design everything perfectly upfront</li>
+  <li>teach others what I was learning and help them navigate the same patterns</li>
+  </ul>
+</p>
+<p>
+  Professionally, it was the project that helped me grow past “the person excited about SwiftUI” into someone who could actually build with it in production, share the knowledge, and shape how our team approached new features.
+</p>
+<div class="project-detail-access">
+  <h4 class="project-detail-access-title">How to access it:</h4>
+  <p>
+    After downloading the app (link below), create an account and log in. Depending on the experiment bucket, the Style Quiz can be found in one of a few places:
+  </p>
+  <ul>
+    <li>Tap the heart icon on the home screen, then look for a banner prompting you to "Find your style."</li>
+    <li>Tap the Planning tab; one of the fan options should be Style Quiz.</li>
+    <li>On the home screen, some users also see a "Find your vibe" task card that opens a view with a link to the quiz.</li>
+  </ul>
+</div>
+<div class="project-detail-actions">
+  <a
+    class="project-detail-cta"
+    href="https://apps.apple.com/us/app/the-knot-wedding-planner/id457941553"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View The Knot on the App Store
+  </a>
+</div>
+</div><a class="project-cta" href="/projects/style-quiz">More</a></div></div></article><article class="project-card expanding-card" data-slug="dynamic-decoding-utility" data-details-loaded="1"><div class="expanding-card-content"><div class="project-card-header"><button type="button" class="expanding-card-close" aria-label="Close" inert>&lsaquo;</button><span class="project-title-alignment"><h3 class="project-title" id="card-title-dynamic-decoding-utility">Dynamic Decoding Utility</h3></span></div><div class="project-thumbnail-image-container"><img class="project-thumbnail-image" src="/_astro/dynamic-decoding-utility-thumb.D1QzZLed_Z1kXuo6.webp" srcset="/_astro/dynamic-decoding-utility-thumb.D1QzZLed_Z1K7RLI.webp 120w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_Z6VNAA.webp 160w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_Z1seHxv.webp 200w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_1yeMzh.webp 240w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_lDHsm.webp 320w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_DwRGz.webp 400w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_1s1QQ1.webp 460w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_Z2m0GzR.webp 520w, /_astro/dynamic-decoding-utility-thumb.D1QzZLed_Z1kXuo6.webp 583w" sizes="(max-width: 820px) min(250px, calc((100vw - 90px) * 0.4167)), (max-width: 879px) 250px, 200px" alt="Dynamic Decoding Utility" loading="lazy"></div><div class="project-card-body"><p class="project-copy">This project serves as an example of my engineering style. It&#39;s a lightweight decoding utility that decodes strongly typed models from deeply nested JSON using leading-dot syntax.</p><div class="expanding-card-details"><figure class="project-detail-hero project-detail-hero--image"><img src="/_astro/dynamic-decoding-utility-hero.DoR9LSLx_1yfSBf.webp" srcset="/_astro/dynamic-decoding-utility-hero.DoR9LSLx_ZuudjN.webp 640w, /_astro/dynamic-decoding-utility-hero.DoR9LSLx_17XOKu.webp 800w, /_astro/dynamic-decoding-utility-hero.DoR9LSLx_1o8eQ6.webp 1040w, /_astro/dynamic-decoding-utility-hero.DoR9LSLx_TBi7w.webp 1280w, /_astro/dynamic-decoding-utility-hero.DoR9LSLx_1yfSBf.webp 1536w" sizes="(max-width: 820px) calc(100vw - 66px), 780px" alt="Dynamic Decoding Utility article header image." loading="lazy" decoding="async"></figure><div class="project-detail">
+  <p>
+    Because most of my professional work lives in proprietary production code, this project serves as a public, inspectable example of my Swift engineering style. It was built during “10% time” at The Knot and is intentionally small and heavily documented.
+  </p>
+  <p>
+    The motivation came from a recurring frustration: large JSON payloads where the data I actually cared about was buried several levels deep. Decoding even a small piece of that data often required building full model trees or multiple CodingKey enums just to reach one nested value. The resulting code felt noisy, and overly coupled to the shape of the payload.
+  </p>
+  <p>
+    My goal was to make this process simpler and more ergonomic. Ideally, I wanted to be able to call a decode function directly on JSONDecoder, pass in a target type and a path, and have the decoder traverse the JSON for me without requiring me to define or care about the structure of every intermediate level. I specifically wanted the API to feel natural in Swift, using leading-dot syntax to describe the path.
+  </p>
+  <p>
+    To support this, I built a custom JSONDecoder extension backed by a lightweight intermediary type responsible for tree traversal. I initially explored a struct-based approach, but while working through keyed vs. unkeyed containers and string vs. integer keys, I ran into complexity around mismatched containers and invalid key types. That friction led to an important realization: the intermediary itself should be an enum, with cases for the container types and associated values representing the keys. This design ensures that keys and containers always stay in sync, eliminating an entire class of errors.
+  </p>
+  <p>
+    For traversal, I took inspiration from SwiftUI’s view and modifier system, where each modifier returns a new view instance. I applied the same idea here: each step along the decoding path returns a new instance of the decoding container, carrying forward the accumulated traversal state. While the concept is abstract, the result is both lightweight and composable, with the entire implementation coming in under 200 lines of code (including documentation).
+  </p>
+  <p>
+    To make the API feel natural to use, I leveraged @dynamicMemberLookup, allowing arbitrary paths to be expressed using dot syntax. Under the hood, this is powered by a DynamicDecodingKey that conforms to CodingKey but can be initialized with any string, making it possible to decode values for arbitrary keys without predefining enums. This piece is what gives the utility its flexibility and reusability.
+  </p>
+  <p>
+    The end result is a decoding extension that can extract strongly typed models from deeply nested JSON while remaining completely agnostic to the shape and structure of the data along the way. I have plans to extend this approach further to support key-path decoding directly on decoding containers, but that work is still in progress.
+  </p>
+  <p>
+    If you download the included Swift playground, you can explore interactive, runnable examples embedded directly in formatted documentation and experiment with the API yourself.
+  </p>
+  <div class="project-detail-actions">
+    <a
+      class="project-detail-cta"
+      href="https://github.com/Bre-Meyer/DynamicDecoding"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View on GitHub
+    </a>
+  </div>
+</div>
+</div><a class="project-cta" href="/projects/dynamic-decoding-utility">More</a></div></div></article></div></div></section><script>(function(){const cardUrlStyle = "path";
+
+      // /#<slug> links (the old site's card URLs): open that card right away, before first paint,
+      // exactly like the old site did when it built the cards. With path URLs the address is
+      // first rewritten to the card's own page (/work/<slug>, /projects/<slug>).
+      (function () {
+        var slug = window.location.hash.replace('#', '');
+        if (!slug) return;
+        if (cardUrlStyle === 'path' && window.location.pathname !== '/') return;
+        var cards = document.querySelectorAll('.expanding-card');
+        for (var i = 0; i < cards.length; i++) {
+          var card = cards[i];
+          if (card.dataset.slug !== slug) continue;
+          var isWork = card.classList.contains('work-card');
+          if (cardUrlStyle === 'path') {
+            history.replaceState(history.state, '', (isWork ? '/work/' : '/projects/') + slug + window.location.search);
+          }
+          card.classList.add('is-expanded');
+          var closeButton = card.querySelector('.expanding-card-close');
+          if (closeButton) closeButton.inert = false;
+          if (isWork) {
+            card.closest('.work-item').classList.add('is-expanded');
+            card.closest('.work-timeline-shell').classList.add('has-expanded');
+          }
+        }
+      })();
+    })();</script></main></div><script type="module" src="/_astro/Home.astro_astro_type_script_index_0_lang.CYk76-l3.js"></script></body></html>
